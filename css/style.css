@@ -1,0 +1,427 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #dddddd;
+  font-family: "Open Sans", sans-serif;
+}
+#navbarSupportedContent1 {
+  margin-left: -150px;
+}
+.imgF {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.carousel-item img {
+  height: 400px;
+}
+.donate-body {
+  display: flex;
+}
+.phil {
+  background-color: #e52d87;
+  margin-bottom: 20px;
+}
+.navbar {
+  background-color: #e52d87;
+  color: #322b2b;
+}
+.nameP {
+  color: white;
+}
+
+.navbar .fa-facebook {
+  color: #322b2b;
+}
+.navbar .fa-twitter {
+  color: #322b2b;
+}
+.navbar .fa-instagram {
+  color: #322b2b;
+}
+.navbar .fa-google-plus {
+  color: #322b2b;
+}
+.blog-event {
+  display: flex;
+  margin-top: 20px;
+}
+.cb {
+  margin-left: auto;
+  margin-right: auto;
+}
+.cb2 {
+  text-align: center;
+  list-style-type: none;
+}
+.modal-header {
+  background-color: #e52d87;
+  font-weight: bold;
+}
+.featured-img {
+  margin-right: 10px;
+}
+.donate {
+  margin-top: 150px;
+}
+.leadButton {
+  color: white;
+  background: #e52d87;
+  margin-right: 5px;
+}
+.leadButton:hover {
+  background: white;
+}
+.navbar .fa-facebook:hover {
+  color: white;
+}
+.navbar .fa-twitter:hover {
+  color: white;
+}
+.navbar .fa-instagram:hover {
+  color: white;
+}
+.navbar .fa-google-plus:hover {
+  color: white;
+}
+.social a:hover {
+  color: white;
+}
+.nav-link {
+  color: wheat;
+}
+.social li a {
+  color: #322b2b;
+}
+.social li {
+  display: inline;
+  color: #322b2b;
+}
+.events {
+  margin-top: 150px;
+}
+.header-text {
+  font-size: 28px;
+}
+#exTab2 {
+  margin-bottom: 10px;
+}
+#exTab2 a:hover {
+  background-color: white;
+  color: #e52d87;
+}
+.featured-blog h3 {
+  font-weight: 800;
+}
+.featured-blog .button-info {
+  background-color: #e52d87;
+  color: white;
+}
+.featured-blog .button-info:hover {
+  background-color: white;
+  color: #e52d87;
+}
+.social-footer i:hover {
+  color: #e52d87;
+}
+
+nav .navbar-nav li a {
+  font-size: 25px;
+}
+nav .navbar-nav li a:hover {
+  color: white !important;
+}
+
+ul {
+  margin-left: auto;
+  margin-right: auto;
+}
+#carouselExampleIndicators1 {
+  margin-top: 150px;
+}
+
+.navbar-brand {
+  margin-left: 50px;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.card-body {
+  text-align: center;
+}
+.jumbotron {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.carousel {
+  margin-bottom: 10px;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+footer {
+  background-color: #322b2b;
+  color: white;
+}
+
+.footer-menus li {
+  display: inline;
+  color: white;
+}
+.footer-menus li:hover {
+  color: #e52d87;
+}
+.footer-text {
+  color: white;
+  margin-top: -16px;
+}
+.footer-text1 {
+  color: white;
+  margin-top: 5px;
+}
+.footer-text1 a:hover {
+  color: #e52d87;
+}
+.footer-text a:hover {
+  color: #e52d87;
+}
+.footer-menus {
+  text-align: center;
+}
+.footer-second a {
+  color: white;
+}
+.footer-third {
+  text-align: end;
+}
+
+.widget {
+  margin-top: 150px;
+}
+.copyright {
+  margin-top: 35px;
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-google-plus,
+.fa-instagram {
+  color: white;
+}
+
+.footer-one {
+  grid-area: header;
+}
+.footer-second {
+  grid-area: footer;
+}
+.footer-third {
+  grid-area: main;
+}
+.container {
+  display: grid;
+
+  grid-template-areas: "header header footer footer main main";
+  grid-gap: 10px;
+  padding: 10px;
+}
+.divider {
+  height: 50px;
+  width: 100%;
+  margin: 45px 0 52px;
+  text-align: center;
+  color: white;
+}
+.pink {
+  background: #e52d87;
+  margin-bottom: 20px;
+}
+.pink .card {
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.header-text a {
+  color: #e52d87;
+  font-size: 35px;
+}
+.header-text a:hover {
+  color: white;
+}
+.footer-menus li {
+  color: white;
+}
+
+.jumbotron {
+  background-color: #322b2b;
+  color: white;
+}
+
+.jumbotron .btn {
+  background-color: #e52d87;
+}
+.jumbotron .btn:hover {
+  background-color: white;
+}
+
+.contact_us_form {
+  margin-bottom: 10px;
+}
+.contact_us_form button {
+  color: white;
+  background-color: #e52d87;
+  margin-top: 10px;
+}
+.left {
+  display: block;
+}
+.donate-content li {
+  display: inline-block;
+}
+.about_us {
+  margin-top: 150px;
+  margin-left: 20px;
+}
+.btn-block {
+  margin-right: 10px;
+  padding: 12px 37px;
+  background: #68abbb;
+  margin-bottom: 10px;
+}
+.donate-body {
+  margin: 0 auto;
+  text-align: center;
+}
+.donate-content {
+  text-align: center;
+}
+.donationB {
+  color: white;
+  background-color: #e52d87;
+}
+.donationB:hover {
+  color: black;
+  background-color: white;
+}
+.billing {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.last_button {
+  text-align: center;
+}
+.mb-3,
+.my-3 {
+  text-align: center;
+}
+
+#message {
+  display: block;
+
+  /*
+	width: 600px;
+	height: 400px
+*/
+}
+.map {
+  display: block;
+}
+/*Tablet View*/
+
+@media (max-width: 768px) {
+  .life {
+    margin-bottom: 20px;
+  }
+  .lead {
+    text-align: center;
+  }
+  .fitland {
+    margin-bottom: 20px;
+  }
+  .donate-body {
+    display: block;
+  }
+  .small2 {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .small2 li {
+    margin-bottom: 10px;
+  }
+  .about_us {
+    margin-top: 250px;
+    text-align: center;
+  }
+  .card {
+    margin: 0%;
+  }
+  .container {
+    display: block;
+  }
+
+  #carouselExampleIndicators1 {
+    margin-top: 250px;
+  }
+
+  .footer-third {
+    text-align: center;
+  }
+  .navbar-brand {
+    margin-left: 25px;
+    margin-bottom: 10px;
+  }
+  .widget {
+    margin-top: 250px;
+  }
+  .events {
+    margin-top: 250px;
+  }
+  .donate {
+    margin-top: 250px;
+  }
+  .header-text {
+    text-align: center;
+  }
+  .form-control-donate input {
+    height: 60px;
+  }
+}
+
+.navbar-toggler {
+  margin-left: 250px;
+}
+
+/*Mobile View*/
+
+@media (max-width: 400px) {
+}
+.imgF {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.imgFI {
+  text-align: center;
+}
+.nameP {
+}

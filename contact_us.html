@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Untitled Document</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!--fontawsome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--	  fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800"
+      rel="stylesheet"
+    />
+
+    <script>
+      function showHint(fname) {
+        if (fname.length == 0) {
+          document.getElementById("txtHint").innerHTML = "";
+
+          return;
+        } else {
+          var xmlhttp = new XMLHttpRequest();
+          xmlhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+              document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+          };
+          xmlhttp.open("GET", "gethint.php?fname=" + fname, true);
+          xmlhttp.send();
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <script src="myScript.js"></script>
+    <header>
+      <!--		Navbar-->
+
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"
+          ><img src="images/covidLogo2.jpg" width="100" height="100" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent1"
+          aria-controls="navbarSupportedContent1"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="social col-sm-6 col-xs-12">
+          <ul class="list-unstyled list-inline header-social">
+            <li>
+              <a href="#"> <i class="fa fa-2x fa-facebook"></i> </a>
+            </li>
+            <li>
+              <a href="#"> <i class="fa fa-2x fa-twitter"></i> </a>
+            </li>
+            <li>
+              <a href="#"> <i class="fa fa-2x fa-google-plus"></i> </a>
+            </li>
+            <li>
+              <a href="#"> <i class="fa fa-2x fa-instagram"></i> </a>
+            </li>
+          </ul>
+          <ul class="list-unstyled list-inline header-contact">
+            <li>
+              <i class="fa fa-phone"></i>
+              <a href="tel:">+210 6210572</a>
+            </li>
+            <li>
+              <i class="fa fa-envelope"></i>
+              <a href="mailto:sav_tph@hotmail.com">sav_tph@hotmail.com</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about_us.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Donate.html">Donate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact_us.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <nav>&nbsp;</nav>
+    </header>
+
+    <main>
+      <div class="col-md-6 col-md-offset-1 col-sm-7 col-xs-12 cb">
+        <div class="widget">
+          <h3 class="widget-title style5">Contact Us</h3>
+          <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore veritatis et quasi architecto beatae vitae
+            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+            eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+            qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+            sed quia non numquam eius modi tempora incidunt ut labore et dolore
+            magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+            nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
+            aliquid ex ea commodi consequatur? Quis autem vel eum iure
+            reprehenderit qui in ea voluptate velit esse quam nihil molestiae
+            consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
+            pariatu
+          </p>
+          <ul class="clearfix cb2">
+            <li>
+              <p>
+                <span class="fa fa-envelope-o"></span>Email:
+                <a href="mailto:sav_tph@hotmail.com">sav_tph@hotmail.com</a>
+              </p>
+            </li>
+            <li>
+              <p><span class="fa fa-phone"></span>Phone: +210 6210572</p>
+            </li>
+
+            <li>
+              <p>
+                <span class="fa fa-map-marker"></span>Address: Amarysias 9
+                Marousi
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="contact-form-full col-md-4 col-sm-4 col-xs-11 cb">
+        <div class="inner contact">
+          <!-- Form -->
+          <div class="contact-form">
+            <!-- form -->
+            <form class="contact_us_form">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputName">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputName"
+                    placeholder="First name"
+                    onkeyup="showHint(this.value)"
+                  />
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputLastName">Last Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputLastName"
+                    placeholder="Last name"
+                  />
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputEmail4">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="inputEmail4"
+                    placeholder="Email"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputAddress"
+                  placeholder="Amarisias 9"
+                />
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputCity">City</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputCity"
+                    placeholder="Marousi"
+                  />
+                </div>
+
+                <div class="form-group col-md-2">
+                  <label for="inputZip">Zip</label>
+                  <input type="text" class="form-control" id="inputZip" />
+                </div>
+              </div>
+
+              <div class="left">
+                <label for="message">Message</label>
+
+                <textarea
+                  name="message"
+                  id="message"
+                  class="form textarea"
+                  cols="50"
+                  rows="5"
+                  placeholder="Ask us ..."
+                ></textarea>
+              </div>
+
+              <div class="form-group"></div>
+              <button
+                type="button"
+                class="btn"
+                data-toggle="modal"
+                data-target="#exampleModalCenter3"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- modal -->
+      <div
+        class="modal fade"
+        id="exampleModalCenter3"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle3">Message</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>
+                <span id="txtHint"></span>
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                onclick="ClearFieldsTwo();"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--            googlemaps-->
+
+      <section class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3142.3877098971857!2d23.795423616181647!3d38.0380514797124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a198e817133501%3A0x6a10c9e7c7abe3c2!2zzpHOvM6xz4HPhc-Dzq_Osc-CIM6Rz4HPhM6tzrzOuc60zr_PgiA5LCDOnM6xz4HOv8-Nz4POuSAxNTEgMjQ!5e0!3m2!1sel!2sgr!4v1615316323975!5m2!1sel!2sgr"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </section>
+    </main>
+    <!--	  footer-->
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-one text-center">
+          <h4 class="covid">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<ins>COVID-19</ins>
+          </h4>
+          <ul class="footer-menus">
+            <a href="index.html"><li>Home /</li></a>
+            <a href="about_us.html"><li>About Us</li></a>
+            <br />
+            <a href="Events.html"><li>Events /</li></a>
+            <a href="Donate.html"><li>Donate /</li></a>
+            <a href="contact_us.html"><li>Contact Us</li></a>
+          </ul>
+        </div>
+
+        <div class="footer-second">
+          <div class="social-footer text-center">
+            <a href="https://www.facebook.com"
+              ><i class="fa fa-2x fa-facebook"></i
+            ></a>
+            <a href="https://www.twitter.com"
+              ><i class="fa fa-2x fa-twitter"></i
+            ></a>
+            <a href="https://www.google.com"
+              ><i class="fa fa-2x fa-google-plus"></i
+            ></a>
+            <a href="https://www.instagram.com"
+              ><i class="fa fa-2x fa-instagram"></i
+            ></a>
+          </div>
+
+          <p class="text-center footer-text1">
+            <a href="tel:">+210 6210572</a>
+          </p>
+          <p class="text-center footer-text">
+            <a href="mailto:sav_tph@hotmail.com">sav_tph@hotmail.com</a>
+          </p>
+        </div>
+
+        <div class="footer-third">
+          <div class="copyright">
+            <span>Copyright 2021 &copy;</span><br />
+            <span>All Rights Reserved from Savvas Gymnopoulos</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>
