@@ -27,3 +27,41 @@
     document.getElementById("message").value = "";
 
  }
+
+ var d = new Date();
+      var months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ];
+      var days = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ];
+      document.getElementById("demo").innerHTML = months[d.getMonth()];
+      var days = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ];
+      document.getElementById("demo2").innerHTML = days[d.getDay()];
+      document.getElementById("demo1").innerHTML = d.getFullYear();
+      document.getElementById("demo4").innerHTML = d.getDate();

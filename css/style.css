@@ -35,6 +35,10 @@ body {
 .navbar .fa-facebook {
   color: #322b2b;
 }
+.paypalBut{
+  color:red;
+  font-weight: bold;
+}
 .navbar .fa-twitter {
   color: #322b2b;
 }
@@ -90,8 +94,9 @@ body {
   color: white;
 }
 .nav-link {
-  color: wheat;
+  color:blue;
 }
+
 .social li a {
   color: #322b2b;
 }
@@ -428,21 +433,17 @@ ul {list-style-type: none;}
 
 
 /* Add media queries for smaller screens */
-@media screen and (max-width:720px) {
-  .weekdays li, .days li {width: 13.1%;}
-}
 
-@media screen and (max-width: 420px) {
-  .weekdays li, .days li {width: 12.5%;}
-  .days li .active {padding: 2px;}
-}
 
-@media screen and (max-width: 290px) {
-  .weekdays li, .days li {width: 12.2%;}
-}
+
+
 /*Tablet View*/
 @media (max-width: 768px) {
-  
+  #navbarSupportedContent1 li {
+    color: #322b2b;
+    text-align: right;
+    margin-right: 20px;
+  }
   .life {
     margin-bottom: 20px;
   }
@@ -506,9 +507,15 @@ ul {list-style-type: none;}
   margin-left: 250px;
 }
 
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+}
+
 /*Mobile View*/
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
 }
 .imgF {
   margin-top: 20px;
@@ -517,5 +524,7 @@ ul {list-style-type: none;}
 .imgFI {
   text-align: center;
 }
-.nameP {
+
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {width: 12.2%;}
 }
